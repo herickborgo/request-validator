@@ -1,0 +1,27 @@
+{
+  "name": "request-validator",
+  "version": "0.1.0",
+  "description": "A tool to validate express requests.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/herickborgo/request-validator.git"
+  },
+  "keywords": [
+    "request",
+    "validator",
+    "request",
+    "validator",
+    "validate",
+    "request"
+  ],
+  "author": "Herick Borgo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/herickborgo/request-validator/issues"
+  },
+  "homepage": "https://github.com/herickborgo/request-validator#readme"
+}
