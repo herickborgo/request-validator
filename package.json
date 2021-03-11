@@ -7,7 +7,7 @@
     "test": "jest",
     "test-coverage": "jest --coverage",
     "build": "tsc",
-    "deploy": "npm publish"
+    "deploy": "yarn publish"
   },
   "repository": "https://github.com/herickborgo/request-validator.git",
   "keywords": [
