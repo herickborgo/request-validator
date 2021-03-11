@@ -1,6 +1,6 @@
 {
   "name": "@herickborgo/request-validator",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A tool to validate the express request parameters.",
   "main": "./dist/request_validator.js",
   "scripts": {
