@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "test-coverage": "jest --coverage",
-    "build": "tsc",
+    "build": "tsc && cp -r src/messages dist/messages",
     "deploy": "yarn publish"
   },
   "repository": "https://github.com/herickborgo/request-validator.git",

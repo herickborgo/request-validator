@@ -37,7 +37,6 @@ abstract class RequestValidator extends Annotation {
     }
 
     protected messages(validations: Array<object>) {
-        // console.log(validatorException);
         const errors: Array<object> = []
         validations.forEach((validation) => {
             const fields = Object.keys(validation);
