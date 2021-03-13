@@ -5,7 +5,7 @@
   "main": "./dist/request_validator.js",
   "scripts": {
     "test": "jest",
-    "test-coverage": "jest --coverage",
+    "test-coverage": "yarn test --coverage",
     "build": "tsc && cp -r src/messages/ dist/messages/",
     "deploy": "yarn publish"
   },
