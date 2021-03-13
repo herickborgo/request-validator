@@ -1,6 +1,7 @@
 # directories
 node_modules/
 src/
+coverage/
 
 # files
 jest.config.js
