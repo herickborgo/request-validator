@@ -9,4 +9,4 @@ const getRouter = () => {
     return router;
 }
 
-module.exports = getRouter();
+export { getRouter as router };
