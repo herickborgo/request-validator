@@ -6,3 +6,4 @@ dist/
 # files
 yarn.lock
 yarn-error.log
+tsconfig.tsbuildinfo
