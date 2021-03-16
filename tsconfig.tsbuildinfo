@@ -152,8 +152,18 @@
         "affectsGlobalScope": false
       },
       "./src/request_validator.ts": {
-        "version": "89bf70b465ce6835518666e31bfebf1524104eb9616f267b9616bfc2c94b866d",
+        "version": "1b694ba08f2b53efb11fef13b2ae69e8c3874876b4d6ff26b15bf58f4a574c76",
         "signature": "b0b8c8adba16031effb1275ab4c0a7b051f73e11a1e0e69ed024be782ad04382",
+        "affectsGlobalScope": false
+      },
+      "./src/request_middleware.ts": {
+        "version": "a885328ecc9e47b4dbb8b57681d6541381dd705cf53482730f84199ecdd5d14f",
+        "signature": "dcb34e0b2256ea199ca295d3deb52c328de1ebb1ccf4f9ce9c22dcd847c922bb",
+        "affectsGlobalScope": false
+      },
+      "./src/index.ts": {
+        "version": "1c354f874d691a025ea29416a4bbd5a706acb45df73edb9acdf3f9bf2efae4af",
+        "signature": "97c1b15a7ce76fbdcf305880691853fcc667a767bbc548569b1ccd8f32d70c61",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/globals.d.ts": {
@@ -172,8 +182,8 @@
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/child_process.d.ts": {
-        "version": "89a3409a743c2a408d02bd68255a61d8416225b76c2c66d8e2e74dad3e00bc5d",
-        "signature": "89a3409a743c2a408d02bd68255a61d8416225b76c2c66d8e2e74dad3e00bc5d",
+        "version": "674bedbfd2004e233e2a266a3d2286e524f0d58787a98522d834d6ccda1d215a",
+        "signature": "674bedbfd2004e233e2a266a3d2286e524f0d58787a98522d834d6ccda1d215a",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/node/cluster.d.ts": {
@@ -385,6 +395,46 @@
         "version": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "signature": "9c4c395e927045b324877acdc4bfb95f128f36bc9f073266a2f0342495075a4f",
         "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/cleanupSemantic.d.ts": {
+        "version": "d8aab31ba8e618cc3eea10b0945de81cb93b7e8150a013a482332263b9305322",
+        "signature": "d8aab31ba8e618cc3eea10b0945de81cb93b7e8150a013a482332263b9305322",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/types.d.ts": {
+        "version": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
+        "signature": "69da61a7b5093dac77fa3bec8be95dcf9a74c95a0e9161edb98bb24e30e439d2",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/diffLines.d.ts": {
+        "version": "561eca7a381b96d6ccac6e4061e6d2ae53f5bc44203f3fd9f5b26864c32ae6e9",
+        "signature": "561eca7a381b96d6ccac6e4061e6d2ae53f5bc44203f3fd9f5b26864c32ae6e9",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/printDiffs.d.ts": {
+        "version": "62ea38627e3ebab429f7616812a9394d327c2bc271003dfba985de9b4137369f",
+        "signature": "62ea38627e3ebab429f7616812a9394d327c2bc271003dfba985de9b4137369f",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/jest-diff/build/index.d.ts": {
+        "version": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
+        "signature": "b4439890c168d646357928431100daac5cbdee1d345a34e6bf6eca9f3abe22bc",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/pretty-format/build/types.d.ts": {
+        "version": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "signature": "5d72971a459517c44c1379dab9ed248e87a61ba0a1e0f25c9d67e1e640cd9a09",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/pretty-format/build/index.d.ts": {
+        "version": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "signature": "02d734976af36f4273d930bea88b3e62adf6b078cf120c1c63d49aa8d8427c5c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/jest/index.d.ts": {
+        "version": "71f30fba971582dc744373cbc8b06c1eb64dc24a6ccbc9b457f94fb68c67cb4e",
+        "signature": "71f30fba971582dc744373cbc8b06c1eb64dc24a6ccbc9b457f94fb68c67cb4e",
+        "affectsGlobalScope": true
       }
     },
     "options": {
@@ -402,7 +452,8 @@
       "sourceMap": true,
       "inlineSources": true,
       "types": [
-        "node"
+        "node",
+        "jest"
       ],
       "stripInternal": true,
       "incremental": true,
@@ -411,6 +462,10 @@
       "configFilePath": "./tsconfig.json"
     },
     "referencedMap": {
+      "./node_modules/@types/jest/index.d.ts": [
+        "./node_modules/jest-diff/build/index.d.ts",
+        "./node_modules/pretty-format/build/index.d.ts"
+      ],
       "./node_modules/@types/node/assert.d.ts": [
         "./node_modules/@types/node/assert.d.ts"
       ],
@@ -638,6 +693,31 @@
       "./node_modules/@types/node/zlib.d.ts": [
         "./node_modules/@types/node/stream.d.ts",
         "./node_modules/@types/node/zlib.d.ts"
+      ],
+      "./node_modules/jest-diff/build/diffLines.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/index.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/diffLines.d.ts",
+        "./node_modules/jest-diff/build/printDiffs.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/printDiffs.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/pretty-format/build/index.d.ts": [
+        "./node_modules/pretty-format/build/types.d.ts"
+      ],
+      "./src/index.ts": [
+        "./src/request_middleware.ts",
+        "./src/request_validator.ts",
+        "./src/validator_exception.ts"
+      ],
+      "./src/request_middleware.ts": [
+        "./src/request_validator.ts"
       ],
       "./src/request_validator.ts": [
         "./node_modules/@herickborgo/annotations/dist/annotation.d.ts",
@@ -645,6 +725,10 @@
       ]
     },
     "exportedModulesMap": {
+      "./node_modules/@types/jest/index.d.ts": [
+        "./node_modules/jest-diff/build/index.d.ts",
+        "./node_modules/pretty-format/build/index.d.ts"
+      ],
       "./node_modules/@types/node/assert.d.ts": [
         "./node_modules/@types/node/assert.d.ts"
       ],
@@ -873,12 +957,35 @@
         "./node_modules/@types/node/stream.d.ts",
         "./node_modules/@types/node/zlib.d.ts"
       ],
+      "./node_modules/jest-diff/build/diffLines.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/index.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/diffLines.d.ts",
+        "./node_modules/jest-diff/build/printDiffs.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/jest-diff/build/printDiffs.d.ts": [
+        "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+        "./node_modules/jest-diff/build/types.d.ts"
+      ],
+      "./node_modules/pretty-format/build/index.d.ts": [
+        "./node_modules/pretty-format/build/types.d.ts"
+      ],
+      "./src/index.ts": [
+        "./src/request_middleware.ts",
+        "./src/request_validator.ts",
+        "./src/validator_exception.ts"
+      ],
       "./src/request_validator.ts": [
         "./node_modules/@herickborgo/annotations/dist/annotation.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
       "./node_modules/@herickborgo/annotations/dist/annotation.d.ts",
+      "./node_modules/@types/jest/index.d.ts",
       "./node_modules/@types/node/assert.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
       "./node_modules/@types/node/base.d.ts",
@@ -925,6 +1032,13 @@
       "./node_modules/@types/node/wasi.d.ts",
       "./node_modules/@types/node/worker_threads.d.ts",
       "./node_modules/@types/node/zlib.d.ts",
+      "./node_modules/jest-diff/build/cleanupSemantic.d.ts",
+      "./node_modules/jest-diff/build/diffLines.d.ts",
+      "./node_modules/jest-diff/build/index.d.ts",
+      "./node_modules/jest-diff/build/printDiffs.d.ts",
+      "./node_modules/jest-diff/build/types.d.ts",
+      "./node_modules/pretty-format/build/index.d.ts",
+      "./node_modules/pretty-format/build/types.d.ts",
       "./node_modules/typescript/lib/lib.dom.d.ts",
       "./node_modules/typescript/lib/lib.es2015.collection.d.ts",
       "./node_modules/typescript/lib/lib.es2015.core.d.ts",
@@ -953,236 +1067,9 @@
       "./node_modules/typescript/lib/lib.es2020.bigint.d.ts",
       "./node_modules/typescript/lib/lib.es5.d.ts",
       "./node_modules/typescript/lib/lib.esnext.intl.d.ts",
-      [
-        "./src/request_validator.ts",
-        [
-          {
-            "file": "./src/request_validator.ts",
-            "start": 263,
-            "length": 1,
-            "messageText": "Parameter 'v' implicitly has an 'any' type.",
-            "category": 1,
-            "code": 7006
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 605,
-            "length": 11,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type '{}'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 647,
-            "length": 10,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type 'Object'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 704,
-            "length": 10,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type 'Object'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 733,
-            "length": 11,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type '{}'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 753,
-            "length": 23,
-            "code": 7053,
-            "category": 1,
-            "messageText": "Element implicitly has an 'any' type because expression of type 'any' can't be used to index type 'Object'."
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 832,
-            "length": 10,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type 'Object'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 891,
-            "length": 10,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type 'Object'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 920,
-            "length": 11,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type '{}'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 940,
-            "length": 10,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type 'Object'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type 'Object'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 1342,
-            "length": 17,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type '{}'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 1433,
-            "length": 17,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type '{}'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          },
-          {
-            "file": "./src/request_validator.ts",
-            "start": 1592,
-            "length": 12,
-            "code": 7053,
-            "category": 1,
-            "messageText": {
-              "messageText": "Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{}'.",
-              "category": 1,
-              "code": 7053,
-              "next": [
-                {
-                  "messageText": "No index signature with a parameter of type 'string' was found on type '{}'.",
-                  "category": 1,
-                  "code": 7054
-                }
-              ]
-            }
-          }
-        ]
-      ],
+      "./src/index.ts",
+      "./src/request_middleware.ts",
+      "./src/request_validator.ts",
       "./src/validator_exception.ts"
     ]
   },

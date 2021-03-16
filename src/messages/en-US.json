@@ -1,5 +1,14 @@
 {
   "validation": {
-    "required": "The field :attribute is required"
+    "required": "The :attribute field is required",
+    "max": {
+      "string": "The :attribute field must be a maximum of :max characters",
+      "number": "The :attribute field must be a maximum of :max"
+    },
+    "min": {
+      "string": "The :attribute field must be at least :min characters",
+      "number": "The :attribute field must be at least :min"
+    },
+    "email": "The :attribute field is invalid"
   }
 }

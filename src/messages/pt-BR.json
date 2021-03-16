@@ -1,5 +1,14 @@
 {
   "validation": {
-    "required": "O campo :attribute é obrigatório"
+    "required": "O campo :attribute é obrigatório",
+    "max": {
+      "string": "O campo :attribute deve ter no máximo :max caracteres",
+      "number": "O campo :attribute deve ser no máximo :max"
+    },
+    "min": {
+      "string": "O campo :attribute deve ter no mínimo :min caracteres",
+      "number": "O campo :attribute deve ser no mínimo :min"
+    },
+    "email": "O campo :attribute é inválido"
   }
 }
